@@ -1,0 +1,33 @@
+.project {
+  width: 90%;
+  height: 30vh;
+  border: 3px solid #4378A7;
+  padding: 30px;
+  padding-top: 20px;
+  margin: 20px;
+  overflow: scroll;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h3 {
+    margin: 50px;
+  }
+}
+
+#projects {
+  margin: 20px auto;
+}
