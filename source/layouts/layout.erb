@@ -11,9 +11,24 @@
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   </head>
   <body>
   <%= partial "layouts/banner" %>
     <%= yield %>
+
+      <!--Import jQuery before materialize.js-->
+  <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+  <script type="text/javascript " src="js/materialize.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      // init scrollspy
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
   </body>
 </html>
